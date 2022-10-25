@@ -70,6 +70,26 @@ The `data-target` attribute references the `id` of the modal you wish to enable 
 </button>
 ```
 
+## Style customization
+
+Most of the styling of this component is left to the user in the `content` slot, however there are some styles built into the background and close button which may need to be overridden for your design.
+
+These CSS variables can be set to your own values to modify the defaults:
+
+```css
+:root {
+  --accessible-modal-bgcolor: 0, 0, 0;
+  --accessible-modal-bgalpha: 0.8;
+  --accessible-modal-zindex: 255;
+  --accessible-modal-closetop: 5px;
+  --accessible-modal-closeright: 5px;
+}
+```
+
+* `--accessible-modal-bgcolor` and `--accessible-modal-bgalpha` control the color of the background overlay.
+* `--accessible-modal-zindex` controls the z-index depth of the modal
+* `--accessible-modal-closetop` and `--accessible-modal-closeright` control the absolute positioning of the close button
+
 ## Other information
 
 * When a modal activates the focus position is updated to the first interactive element inside the modal `content` slot. If none is found focus is placed upon the `close` element.
@@ -80,7 +100,6 @@ The `data-target` attribute references the `id` of the modal you wish to enable 
 
 ## TODO
 
-* move hard-coded styles into variables for easy overriding (z-index, close positioning)
 * test and test again
 * package for NPM
 

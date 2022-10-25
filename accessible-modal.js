@@ -3,14 +3,15 @@ template.innerHTML = `
 <style>
 .overlay {
   display: none;
-  position:fixed;
+  position: fixed;
   justify-content: center;
   align-items: center;
   top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.8);
-  z-index: 255;
+  background-color: rgba(var(--accessible-modal-bgcolor, 0, 0, 0), var(--accessible-modal-bgalpha, 0.8));
+  z-index: var(--accessible-modal-zindex, 255);
 }
 
 .modal-content {
@@ -19,9 +20,8 @@ template.innerHTML = `
 
 .modal-close {
   position: absolute;
-  top: 5px;
-  right: 5px;
-  color: rgba(255,255,255,1);
+  top: var(--accessible-modal-closetop, 5px);
+  right: var(--accessible-modal-closeright, 5px);
 }
 
 :focus-visible {
