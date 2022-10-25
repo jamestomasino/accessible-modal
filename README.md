@@ -24,6 +24,12 @@ accessibleModal.init('.main', '.modal-button');
 
 The library will use the main target to disable tab & focus navigation while the modal is open, locking the focus in on your modal. The button targets will have listeners added to enable them to show the appropriate modals.
 
+It is recommended to add the `aria-haspopup` attribute to your body tag to indicate the presence of dialogs.
+
+```html
+<body aria-haspopup="dialog">
+```
+
 ## Web Component
 
 The `accessible-modal` web component contains two slots (`content`, `close`), as well as an optional `label` property.
