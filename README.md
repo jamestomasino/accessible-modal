@@ -78,6 +78,11 @@ The `data-target` attribute references the `id` of the modal you wish to enable 
 
 * While the modal is open the main content area will be set as `inert`. A [polyfill](https://github.com/WICG/inert) is included in this library for browsers that don't have native support yet.
 
+## TODO
+
+* move hard-coded styles into variables for easy overriding (z-index, close positioning)
+* test and test again
+* package for NPM
 
 ## License
 
