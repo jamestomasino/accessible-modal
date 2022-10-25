@@ -1,0 +1,28 @@
+{
+  "name": "@jamestomasino/accessible-modal",
+  "version": "1.0.0",
+  "description": "A web-component modal with default behaviors and easy slots for customization",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamestomasino/accessible-modal.git"
+  },
+  "keywords": [
+    "modal",
+    "accessibility",
+    "wcag",
+    "aria"
+  ],
+  "author": "James Tomasino",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/jamestomasino/accessible-modal/issues"
+  },
+  "homepage": "https://github.com/jamestomasino/accessible-modal#readme",
+  "dependencies": {
+    "wicg-inert": "^3.1.2"
+  }
+}
