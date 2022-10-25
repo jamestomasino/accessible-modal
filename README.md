@@ -49,11 +49,11 @@ The `accessible-modal` web component contains two slots (`content`, `close`), as
 
 The content slot is the main content area for the modal. It can contain any HTML tags and can be styled directly in your CSS.
 
-### Close
+### Close (optional)
 
 The close button symbol is a simple SVG "X" by default. You can override it by putting your own entry into the close slot.
 
-### Label
+### Label (optional)
 
 The label attribute provides the `aria-label` information for the modal. If you omit this attribute the component will use the first text node it can find within the `content` slot for the label.
 
