@@ -18,7 +18,7 @@ Initialize the javascript library by loading it and calling the `init` method. I
 * a querySelector target value that points to the buttons which will show your modals
 
 ```javascript
-const { accessibleModal } = require('@jamestomasino/scroll-frame');
+const { accessibleModal } = require('@jamestomasino/accessible-modal');
 accessibleModal.init('.main', '.modal-button');
 ```
 
